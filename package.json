@@ -1,0 +1,32 @@
+{
+  "name": "semo-starter-application-simple-typescript",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.13.2",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "clean": "rimraf built",
+    "prepare": "npm run clean && npm run build",
+    "test": "exit 0",
+    "serve": "semo serve",
+    "serve:watch": "nodemon --exec 'yarn serve'"
+  },
+  "dependencies": {
+    "@semo/core": "^0.0.39"
+  }
+}
