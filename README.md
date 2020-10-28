@@ -1,23 +1,27 @@
 # semo-starter-application-simple-typescript
 
-This is a simple typescript application template, you can build you awesome application base on this template or juse for learning or for fun.
+This is a simple typescript application template, you can build your awesome application basing on this template or juse for learning or for fun.
 
-# Usage
+# Project initialization
 
 ```
 npm i -g @semo/cli
 
-# For short, just use --select or --select=application 
-semo new YOUR_AWESOME_PROJECT_NAME --select=semo-starter-application-simple-typescript
+# For short, just use -T or --template=application 
+semo create YOUR_AWESOME_PROJECT_NAME --template=application
 ```
 
-# with semo-plugin-serve
+# Usage
 
-This project base on semo-plugin-serve, a simple http-server with api support.
+* `yarn dev`: launch the dev server
+* `yarn dev:debug`: launch the dev server which support debug, press `F5` in VSCode
+* The code template includes basic [Semo](https://semo.js.org) integration,.
 
-```
-npm i -g @semo/cli semo-plugin-serve
-yarn serve
-yarn serve:watch # For development
-```
+# After
 
+After downloading the typescript backend project template, you can try any lib in typescript environment.
+
+
+# Licence
+
+MIT

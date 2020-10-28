@@ -5,12 +5,10 @@ pluginMakeDir: bin/semo/plugins
 extendMakeDir: bin/semo/extends
 scriptMakeDir: bin/semo/scripts
 hookMakeDir: bin/semo/hooks
-routeMakeDir: src
 
 commandDir: built/bin/semo/commands
 pluginDir: built/bin/semo/plugins
 extendDir: built/bin/semo/extends
 scriptDir: built/bin/semo/scripts
 hookDir: built/bin/semo/hooks
-routeDir: built/src
 

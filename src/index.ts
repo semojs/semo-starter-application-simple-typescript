@@ -1,13 +1,14 @@
-// export const name = '' // 路由名字，非必填
-// export const path = '' // 追加额外的路由，非必填
-// export const method = 'get' // 路由方法，默认 get，非必填
-// // https://indicative.adonisjs.com/validations/master/min
-// export const middleware = [] // 为单个路由指定前置中间件
-// export const validate = {
-//   username: 'min:6' 
-// }
-export const handler = async ctx => {
-  // ctx.errors[11] = '错误'
-  ctx.json = true // 返回JSON数据结构
-  return 'hello world'
-}
+import http from 'http'
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

@@ -15,6 +15,5 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 'never'
   },
   globals: {
-    process: true
   }
 }

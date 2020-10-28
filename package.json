@@ -14,19 +14,20 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "nodemon": "^2.0.4",
+    "npm-check-updates": "^9.2.3",
     "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
+    "dev": "nodemon -x node -r ts-node/register src/index.ts",
+    "dev:debug": "nodemon -x node -r ts-node/register --inspect-brk src/index.ts",
     "watch": "tsc -w",
     "build": "tsc",
     "clean": "rimraf built",
-    "prepare": "npm run clean && npm run build",
-    "test": "exit 0",
-    "serve": "semo serve",
-    "serve:watch": "nodemon --exec 'yarn serve'"
+    "upgrade:preview": "ncu",
+    "upgrade": "ncu -u && yarn",
+    "test": "exit 0"
   },
-  "dependencies": {
-    "@semo/core": "^0.0.39"
-  }
+  "dependencies": {}
 }
